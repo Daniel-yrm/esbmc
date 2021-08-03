@@ -121,11 +121,12 @@ void real_migrate_type(
 
     if(type.find(typet::a_size).id() == "infinity")
     {
-
-      assert(0 && "Vector type has a constant size\n"
-                  "Please, refer to: "
-                   "https://clang.llvm.org/docs/"
-                  "LanguageExtensions.html#vectors-and-extended-vectors");
+      assert(
+        0 &&
+        "Vector type has a constant size\n"
+        "Please, refer to: "
+        "https://clang.llvm.org/docs/"
+        "LanguageExtensions.html#vectors-and-extended-vectors");
       abort();
     }
 
